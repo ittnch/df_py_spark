@@ -188,6 +188,6 @@ new_data_scaled = scaler_model.transform(new_data)
 
 # Получение прогнозов на новых данных
 predictions_new = lrModel.transform(new_data_scaled)
-
+# выводим предсказания
 predictions_new.show()
 
