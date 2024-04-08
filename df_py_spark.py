@@ -128,9 +128,9 @@ predictions = lrModel.transform(testData)
 predictions.select("prediction", "label").show()
 
 house_results=lrModel.evaluate(trainingData)
-
-print('Rsquared Error :',house_results.r2)
 #R2 значение показывает точность модели is 73%
+print('Rsquared Error :',house_results.r2)
+
 
 test_results = lrModel.evaluate(testData)
 print("MSE: {}".format(test_results.meanSquaredError))
